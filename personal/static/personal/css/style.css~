@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;
+	font-size: 1em;
+	color: #888;
+}
+
+a:link {
+	text-decoration: none;
+	color: #3d72a4;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #3d72a4;
+}
+
+header {
+
+}
+
+#header-image {
+	float: left;
+	text-align: right;
+	width: 50%;
+}
+
+#navigation-div {
+	float: left;
+	width: 50%;
+	margin-top: 80px;
+}
+
+.clear-float {
+	clear: both;
+}
+
+footer {
+	margin:0 auto;
+	text-align: center;
+}
+
+#site-content {
+	padding-top: 30px;
+	padding-left: 10px;
+}

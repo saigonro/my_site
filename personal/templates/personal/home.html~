@@ -1,0 +1,9 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<p>Hi there! I'm Dan and I'm a self-taught web developer. Welcome to my website!</p>
+
+{% include 'personal/includes/htmlsnippet.html' %}
+
+{% endblock %}

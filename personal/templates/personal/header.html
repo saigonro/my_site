@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% load staticfiles %}
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type = "text/css"/>
+
+	<title>Dan Dumitrache</title>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- Header starts here -->
+		<div class="page-header">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="text-left">
+						<img src="../../static/personal/img/dan-dumitrache.png" width="100" height="100" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6">
+				<nav class="text-right" style="font-size: 1.2em;">
+					<a style="padding-right: 10px;" href="/"><span class="glyphicon glyphicon-home"></span> </a>
+					<a style="padding-right: 10px;" href="/blog/"><span class="glyphicon glyphicon-list-alt"></span> </a>
+					<a href="/contact/"> <span class="glyphicon glyphicon-envelope"></span></a>
+				</nav>
+				</div>
+			</div>
+			<div class="row" style="text-align: right;">
+				<p class="text-primary" style="padding-right: 15px;">Dan Dumitrache</p>
+			</div>
+		</div>
+		<!-- Header ends here -->
+
+		<div class="row" id="site-content">
+			<div class="col-sm-3">
+
+			</div>
+			<div class="col-sm-9">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
