@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = '9s*_vln%56mdqsr44qiyeb9a=jkcx%wxih!__2j3qk6981505c'
 import os
-SECRET_KEY = os.environ.get('9s*_vln%56mdqsr44qiyeb9a=jkcx%wxih!__2j3qk6981505c')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = 'ddn1CortexRo!' #my gmail password
+EMAIL_HOST_PASSWORD = '' #my gmail password
 EMAIL_HOST_USER = 'vietnamezul@gmail.com' #my gmail username
 DEFAULT_FROM_EMAIL = 'vietnamezul@gmail.com'
 SERVER_EMAIL = 'vietnamezul@gmail.com'
