@@ -31,6 +31,20 @@ DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 ALLOWED_HOSTS = []
 
 
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'vietnamezul@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+
+ADMINS = (
+    ('Dan Dumitrache', 'vietnamezul@gmail.com'),
+)
+
+MANAGERS = ADMINS
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -142,3 +156,5 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
