@@ -30,8 +30,8 @@ DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = []
 
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -42,7 +42,7 @@ SERVER_EMAIL = 'vietnamezul@gmail.com'
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
->>>>>>> cd9ba94c7db99a2588aa50f1ac8a60a609393791
+#>>>>>>> cd9ba94c7db99a2588aa50f1ac8a60a609393791
 
 # Application definition
 
@@ -137,10 +137,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
->>>>>>> cd9ba94c7db99a2588aa50f1ac8a60a609393791
+#>>>>>>> cd9ba94c7db99a2588aa50f1ac8a60a609393791
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
