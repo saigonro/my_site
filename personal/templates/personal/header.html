@@ -2,53 +2,43 @@
 <html lang="en">
 
 <head>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	{% load staticfiles %}
-
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="{% static 'css/style.css' %}" type = "text/css"/>
-
+	<link rel="stylesheet" href="{% static 'personal/css/style.css' %}" type = "text/css"/>
 	<title>Dan Dumitrache</title>
-
 </head>
 
 <body>
-
 	<div class="container">
+<!-- Header starts here -->
 
-		<!-- Header starts here -->
-		<div class="page-header">
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="text-left">
-						<img src="../../static/personal/img/dan-dumitrache.png" width="100" height="100" alt="">
-					</div>
+				<div class="col-sm-3" style="text-align: right; padding-top: 20px; padding-right: 50px;">
+					<img src="../static/personal/img/python-powered-w-140x56.png" />
 				</div>
-				<div class="col-sm-6">
-				<nav class="text-right" style="font-size: 1.2em;">
-					<a style="padding-right: 10px;" href="/"><span class="glyphicon glyphicon-home"></span> </a>
-					<a style="padding-right: 10px;" href="/blog/"><span class="glyphicon glyphicon-list-alt"></span> </a>
-					<a href="/contact/"> <span class="glyphicon glyphicon-envelope"></span></a>
-				</nav>
+				<div class="col-sm-9">
+					<a href="/"><h1 style="font-size: 1.5em;">DAN DUMITRACHE - Web Developer<br>
+					<small>HTML, CSS, Bootstrap, JavaScript, Django, Python, SQLite/PostgreSQL/MySQL, Git, Bash Shell</small></h1></a>
 				</div>
 			</div>
-			<div class="row" style="text-align: right;">
-				<p class="text-primary" style="padding-right: 15px;">Dan Dumitrache</p>
-			</div>
-		</div>
-		<!-- Header ends here -->
+			<hr>
+<!-- Header ends here -->
 
-		<div class="row" id="site-content">
+<!-- Content starts here -->
+		<div class="row">
 			<div class="col-sm-3">
+				<nav class="text-right" style="padding-top: 22px; padding-right: 50px;">
+					<h4>MENU</h4><hr>
+					<a href="/">ABOUT</a><br>
+					<a href="/blog/">BLOG</a><br>
+					<a href="/photos/">GALLERY</a><br>
+					<a href="/contact/">CONTACT</a><br>
 
+				</nav>
 			</div>
 			<div class="col-sm-9">
 				{% block content %}
@@ -56,8 +46,18 @@
 			</div>
 		</div>
 
-	</div>
+<!-- Content ends here -->
+<div class="navbar navbar-bottom">
+	<div class="row"><hr>
+		<div class="col-sm-3"></div>
+			<div class="col-sm-9">
+				<p style="font-size: 0.8em;">&#169; <span id="theyear"></span> Dan Dumitrache</p>
+				<script type="text/javascript" >document.getElementById("theyear").innerHTML = new Date().getFullYear();</script>
+			</div>
+		</div>
+</div>
 
+</div>
 </body>
 
 </html>

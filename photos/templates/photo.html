@@ -1,0 +1,17 @@
+{% extends "personal/header.html" %}
+{% block content %}
+
+
+<div class="row">
+    <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+
+{% for photo in photos %}
+  {% if photo.image %}
+    <!--<h3>{{ photo.title }}</h3>-->
+    <img src='{{ photo.image.url }}' style="max-height: 150px;" />
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}

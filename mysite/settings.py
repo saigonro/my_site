@@ -49,6 +49,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 INSTALLED_APPS = [
     'personal',
     'blog',
+    'photos',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -154,3 +155,6 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "mediafiles")
